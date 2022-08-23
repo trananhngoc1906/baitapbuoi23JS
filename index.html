@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Bài tập 1: tính tổng lương -->
+        <div class="card">
+            <div class="card-header bg-primary">
+                <h4>Tính tổng lương</h4>
+
+            </div>
+            <div class="card-body">
+                <label>Số ngày công</label>
+                <input id="soNgayCong" class="form-control w-25" />
+                <br>
+                <button id="btn" class="btn btn-primary w-25">Login</button>
+            </div>
+            <div class="card-footer alert alert-primary">
+                Kết quả: <span id="tongLuong"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- Bài tập CASE STUDY -->
+        <div class="card">
+            <div class="card-header bg-danger">
+                <h4>Case Study</h4>
+
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Tên phim</label>
+                    <input type="text" id="tenPhim" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Giá vé NL</label>
+                    <input type=" text" id="giaVeNL" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Số lượng vé NL</label>
+                    <input type=" text" id="soVeNL" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Giá vé TE</label>
+                    <input type=" text" id="giaVeTE" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Số lượng vé TE</label>
+                    <input type=" text" id="soVeTE" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Phần trăm từ thiện</label>
+                    <select id="phanTramTuThien" class="form-control">
+                        <option value="20">20%</option>
+                        <option value="10">10%</option>
+                    </select>
+                </div>
+                <br>
+                <button id="btnSubmit" class="btn btn-danger">Submit</button>
+            </div>
+            <div class="card-footer">
+                Kết quả: <span id="showInFoCaseStudy"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- Bài tập 2: tính giá trị trung bình -->
+        <div class="card">
+            <div class="card-header bg-warning">
+                <h4>Bài tập tính trung bình 5 số</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Số thứ nhất</label>
+                    <input type="number" id="number1" class="form-control w-25">
+                </div>
+                <div class="form-group">
+                    <label for="">Số thứ hai</label>
+                    <input type="number" id="number2" class="form-control w-25">
+                </div>
+                <div class="form-group">
+                    <label for="">Số thứ ba</label>
+                    <input type="number" id="number3" class="form-control w-25">
+                </div>
+                <div class="form-group">
+                    <label for="">Số thứ tư</label>
+                    <input type="number" id="number4" class="form-control w-25">
+                </div>
+                <div class="form-group">
+                    <label for="">Số thứ năm</label>
+                    <input type="number" id="number5" class="form-control w-25">
+                </div>
+                <button id="btnTrungBinh" class="btn btn-warning">Tính trung bình</button>
+            </div>
+            <div class="card-footer">
+                Kết quả là: <span id="showAverage"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- Bài tập 3: quy đổi tiền -->
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                <h4>Quy đổi tiền</h5>
+            </div>
+            <div class="card-body">
+                <p>Tỷ giá hiện nay:<strong> 23.500 VND</strong></p>
+                <div class="form-group">
+                    <label for="">Số USD cần đổi</label>
+                    <input type="text" id="soTienCanDoi" class="form-control w-25">
+                    <br>
+                    <button id="btnDoiTien" class=" btn btn-secondary">Submit</button>
+                </div>
+            </div>
+            <div class="card-footer">
+                Số tiền nhận về là: <span id="showSoTienDoi"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- Bài tập 4: tính diện tích, chu vi hình chữ nhật -->
+
+        <div class="card">
+            <div class="card-header bg-success">
+                <h4>Tính diện tích, chu vi hình chữ nhật</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Nhập chiều dài</label>
+                    <input type="text" id="chieuDai" class="form-control w-25">
+                </div>
+                <div class="form-group">
+                    <label for="">Nhập chiều rộng</label>
+                    <input type="text" id="chieuRong" class="form-control w-25">
+                </div>
+                <button id="btnTinhKetQua" class="btn btn-success">Kết quả</button>
+            </div>
+            <div class="card-footer">
+                <span id="showChuViDienTich"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- Bài tập 5: tính tổng 2 ký số -->
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                <h4>Tính tổng 2 ký số</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="number">Nhập số 2 chữ số vào đây</label>
+                    <input type="number" id="number" class="form-control w-25">
+                </div>
+                <button id="btnTong2KySo" class="btn btn-dark">Kết quả</button>
+            </div>
+            <div class="card-footer">
+                Tổng 2 ký số là: <span id="showTong2KySo"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
